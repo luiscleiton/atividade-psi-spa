@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+#casas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.card-casa {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card-casa h2 {
+    font-size: 45px;
+    margin: 5px 0 15px;
+}
+
+.card-casa h3 {
+    margin-bottom: 10px;
+}
+
+.card-casa p {
+    margin: 8px 0;
+}
+
+#galeria-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+#galeria-container > button {
+    grid-column: 1 / 5;
+    justify-self: start;
+}
+
+.card-personagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-personagem img {
+    width: 100%;
+    height: 220px;
+}
+
+.card-personagem h3 {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+#detalhes-container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#detalhes-container img {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: 20px auto;
+}
+
+#detalhes-container p {
+    margin: 12px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #111;
+}
+
+button:hover {
+    background-color: #c9a44c;
+}
